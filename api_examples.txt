@@ -1,0 +1,146 @@
+=== TESTANDO APIs DO SISTEMA E-COMMERCE ===
+
+1. LISTANDO TODOS OS PRODUTOS:
+[
+    {
+        "id": 1,
+        "name": "Notebook Dell Inspiron",
+        "price": 2500.0,
+        "description": "Notebook Dell Inspiron 15 com Intel Core i5, 8GB RAM, SSD 256GB"
+    },
+    {
+        "id": 2,
+        "name": "Mouse Logitech MX Master",
+        "price": 350.0,
+        "description": "Mouse sem fio Logitech MX Master 3 com sensor de alta precis\u00e3o"
+    },
+    {
+        "id": 3,
+        "name": "Teclado Mec\u00e2nico",
+        "price": 450.0,
+        "description": "Teclado mec\u00e2nico RGB com switches Cherry MX Blue"
+    },
+    {
+        "id": 4,
+        "name": "Monitor LG 24\"",
+        "price": 800.0,
+        "description": "Monitor LG 24 polegadas Full HD IPS"
+    },
+    {
+        "id": 5,
+        "name": "Smartphone Samsung Galaxy",
+        "price": 1200.0,
+        "description": "Samsung Galaxy A54 128GB com c\u00e2mera tripla"
+    }
+]
+
+2. CRIANDO NOVO PRODUTO:
+{
+    "id": 6,
+    "name": "Headset Gamer",
+    "price": 299.99,
+    "description": "Headset gamer com microfone remov\u00edvel"
+}
+
+3. LISTANDO USUÁRIOS:
+[
+    {
+        "id": 1,
+        "name": "Jo\u00e3o Silva",
+        "email": "joao@email.com"
+    },
+    {
+        "id": 2,
+        "name": "Maria Santos",
+        "email": "maria@email.com"
+    },
+    {
+        "id": 3,
+        "name": "Pedro Oliveira",
+        "email": "pedro@email.com"
+    }
+]
+
+4. ADICIONANDO PRODUTO AO CARRINHO:
+{
+    "id": 2,
+    "userId": 1,
+    "productId": 2,
+    "quantity": 1,
+    "productName": "Mouse Logitech MX Master",
+    "unitPrice": 350.0,
+    "totalPrice": 350.0
+}
+
+5. VISUALIZANDO CARRINHO DO USUÁRIO:
+[
+    {
+        "id": 2,
+        "userId": 1,
+        "productId": 2,
+        "quantity": 1,
+        "productName": "Mouse Logitech MX Master",
+        "unitPrice": 350.0,
+        "totalPrice": 350.0
+    }
+]
+
+6. CRIANDO PEDIDO A PARTIR DO CARRINHO:
+{
+    "id": 2,
+    "userId": 1,
+    "userName": "Jo\u00e3o Silva",
+    "totalAmount": 350.0,
+    "status": "PENDING",
+    "createdAt": "2025-08-31T14:41:38.628889753",
+    "items": [
+        {
+            "id": null,
+            "productId": 2,
+            "productName": "Mouse Logitech MX Master",
+            "quantity": 1,
+            "unitPrice": 350.0,
+            "totalPrice": 350.0
+        }
+    ]
+}
+
+7. LISTANDO PEDIDOS DO USUÁRIO:
+[
+    {
+        "id": 1,
+        "userId": 1,
+        "userName": "Jo\u00e3o Silva",
+        "totalAmount": 5000.0,
+        "status": "PENDING",
+        "createdAt": "2025-08-31T14:40:00.69478",
+        "items": [
+            {
+                "id": null,
+                "productId": 1,
+                "productName": "Notebook Dell Inspiron",
+                "quantity": 2,
+                "unitPrice": 2500.0,
+                "totalPrice": 5000.0
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "userId": 1,
+        "userName": "Jo\u00e3o Silva",
+        "totalAmount": 350.0,
+        "status": "PENDING",
+        "createdAt": "2025-08-31T14:41:38.62889",
+        "items": [
+            {
+                "id": null,
+                "productId": 2,
+                "productName": "Mouse Logitech MX Master",
+                "quantity": 1,
+                "unitPrice": 350.0,
+                "totalPrice": 350.0
+            }
+        ]
+    }
+]

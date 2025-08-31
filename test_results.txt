@@ -1,0 +1,52 @@
+=== RESULTADOS DOS TESTES UNITÁRIOS ===
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+14:41:53.032 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.ecommerce.catalog.controller.ProductControllerTest]: ProductControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:41:53.116 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.ecommerce.catalog.EcommerceApplication for test class com.ecommerce.catalog.controller.ProductControllerTest
+14:41:53.161 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2025-08-31T14:41:53.396Z  INFO 5975 --- [           main] c.e.c.controller.ProductControllerTest   : Starting ProductControllerTest using Java 17.0.16 with PID 5975 (started by root in /workspace/project)
+2025-08-31T14:41:53.397Z  INFO 5975 --- [           main] c.e.c.controller.ProductControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2025-08-31T14:41:53.409Z DEBUG 5975 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@383c3eb3
+2025-08-31T14:41:54.033Z DEBUG 5975 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-08-31T14:41:54.095Z DEBUG 5975 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2025-08-31T14:41:54.105Z DEBUG 5975 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-08-31T14:41:54.110Z DEBUG 5975 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-08-31T14:41:54.133Z  INFO 5975 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-08-31T14:41:54.134Z  INFO 5975 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-31T14:41:54.135Z  INFO 5975 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-08-31T14:41:54.150Z  INFO 5975 --- [           main] c.e.c.controller.ProductControllerTest   : Started ProductControllerTest in 0.996 seconds (process running for 2.654)
+2025-08-31T14:41:54.215Z DEBUG 5975 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ecommerce.catalog.controller.ProductController#createProduct(ProductDTO)
+2025-08-31T14:41:54.250Z DEBUG 5975 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ecommerce.catalog.dto.ProductDTO@38667005]
+2025-08-31T14:41:54.299Z  WARN 5975 --- [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.ecommerce.catalog.dto.ProductDTO> com.ecommerce.catalog.controller.ProductController.createProduct(com.ecommerce.catalog.dto.ProductDTO) with 2 errors: [Field error in object 'productDTO' on field 'name': rejected value []; codes [NotBlank.productDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDTO.name,name]; arguments []; default message [name]]; default message [Nome do produto é obrigatório]] [Field error in object 'productDTO' on field 'price': rejected value [-10.00]; codes [DecimalMin.productDTO.price,DecimalMin.price,DecimalMin.java.math.BigDecimal,DecimalMin]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDTO.price,price]; arguments []; default message [price],false,0.0]; default message [Preço deve ser maior que zero]] ]
+2025-08-31T14:41:54.322Z DEBUG 5975 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ecommerce.catalog.controller.ProductController#createProduct(ProductDTO)
+2025-08-31T14:41:54.323Z DEBUG 5975 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ecommerce.catalog.dto.ProductDTO@45bf93bb]
+2025-08-31T14:41:54.328Z DEBUG 5975 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-08-31T14:41:54.328Z DEBUG 5975 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ecommerce.catalog.dto.ProductDTO@71468613]
+2025-08-31T14:41:54.355Z DEBUG 5975 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ecommerce.catalog.controller.ProductController#getAllProducts()
+2025-08-31T14:41:54.356Z DEBUG 5975 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-08-31T14:41:54.357Z DEBUG 5975 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.ecommerce.catalog.dto.ProductDTO@7bbd76b8]]
+2025-08-31T14:41:54.363Z DEBUG 5975 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ecommerce.catalog.controller.ProductController#updateProduct(Long, ProductDTO)
+2025-08-31T14:41:54.365Z DEBUG 5975 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ecommerce.catalog.dto.ProductDTO@7a3a49e5]
+2025-08-31T14:41:54.366Z DEBUG 5975 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-08-31T14:41:54.366Z DEBUG 5975 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ecommerce.catalog.dto.ProductDTO@acd3460]
+2025-08-31T14:41:54.370Z DEBUG 5975 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ecommerce.catalog.controller.ProductController#deleteProduct(Long)
+2025-08-31T14:41:54.371Z DEBUG 5975 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-08-31T14:41:54.371Z DEBUG 5975 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2025-08-31T14:41:54.375Z DEBUG 5975 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ecommerce.catalog.controller.ProductController#getProductById(Long)
+2025-08-31T14:41:54.376Z DEBUG 5975 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-08-31T14:41:54.376Z DEBUG 5975 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2025-08-31T14:41:54.379Z DEBUG 5975 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ecommerce.catalog.controller.ProductController#deleteProduct(Long)
+2025-08-31T14:41:54.380Z DEBUG 5975 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-08-31T14:41:54.380Z DEBUG 5975 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2025-08-31T14:41:54.383Z DEBUG 5975 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ecommerce.catalog.controller.ProductController#getProductById(Long)
+2025-08-31T14:41:54.384Z DEBUG 5975 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-08-31T14:41:54.384Z DEBUG 5975 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.ecommerce.catalog.dto.ProductDTO@4e1a3d5a]
+[0m[0m
