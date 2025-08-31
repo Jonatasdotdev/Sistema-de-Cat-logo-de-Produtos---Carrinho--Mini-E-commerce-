@@ -191,6 +191,21 @@ npm start
 * **Ícones Font Awesome**
 * **Feedback visual (loading, alerts, toasts)**
 
+Screenshots:
+<img width="1280" height="720" alt="screenshot_20250831_155803_360214" src="https://github.com/user-attachments/assets/85dc1d0e-0038-48eb-b0cb-c5f23fbcf85d" />
+<img width="1280" height="720" alt="screenshot_20250831_155751_593722" src="https://github.com/user-attachments/assets/e51d092a-7574-4329-97f7-54d9cd48da0e" />
+<img width="1280" height="720" alt="screenshot_20250831_155743_351354" src="https://github.com/user-attachments/assets/dabfd5b6-cb60-4cf1-83d0-d3514612ccdf" />
+<img width="1280" height="720" alt="screenshot_20250831_155551_505315" src="https://github.com/user-attachments/assets/0e0fc030-2fe0-41a5-a399-402344a24804" />
+<img width="1280" height="720" alt="screenshot_20250831_154625_442333" src="https://github.com/user-attachments/assets/893f7efe-d383-4df5-b779-ba7268ab9356" />
+<img width="1280" height="720" alt="screenshot_20250831_154558_973341" src="https://github.com/user-attachments/assets/448272b9-6e65-4830-a452-b335b363f218" />
+<img width="1280" height="720" alt="screenshot_20250831_154537_139534" src="https://github.com/user-attachments/assets/40b0108b-6949-4697-a918-37c4832c0d93" />
+<img width="1280" height="720" alt="screenshot_20250831_154530_674984" src="https://github.com/user-attachments/assets/f6370398-36da-4d27-8dfa-781f44729bf0" />
+<img width="1280" height="720" alt="screenshot_20250831_154524_788545" src="https://github.com/user-attachments/assets/a369e2c6-b0ba-4899-89a8-1dc49cbcb19a" />
+<img width="1280" height="720" alt="screenshot_20250831_154518_702313" src="https://github.com/user-attachments/assets/2e2b676f-ea6a-41a9-8a75-eb555b4ac766" />
+<img width="1280" height="720" alt="screenshot_20250831_154512_704926" src="https://github.com/user-attachments/assets/14f734c5-dde5-4c21-a5c7-741bc9a57de2" />
+<img width="1280" height="720" alt="screenshot_20250831_155824_688051" src="https://github.com/user-attachments/assets/ef9d8e20-719d-49b9-b232-a6c1d64a3fa2" />
+
+
 ---
 
 ## 🚀 Melhorias Futuras
